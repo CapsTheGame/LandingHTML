@@ -1,0 +1,595 @@
+/* GLOBAL */
+
+* {
+  color: white;
+
+  font-family: Montserrat, sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1600px;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin: auto;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  background-color: #141414;
+}
+
+a {
+  text-decoration: none;
+}
+
+button::after {
+  transition: none;
+}
+
+img {
+  /* Make images undraggable by user mouse */
+  /* user-drag: none;  */
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  height: auto; /* To prevent image rendering conflicts */
+}
+
+.header-mobile {
+  display: none;
+  justify-content: space-between;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Snyder Speed Brush";
+  src: url("fonts/18046.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Aftershock";
+  src: url("fonts/SF-Aftershock-Debris-Solid.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LED";
+  src: url("fonts/ScientificCalculatorLcdRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* FLEX TEMPLATES */
+
+.flex {
+  display: flex;
+}
+
+.flex.row {
+  flex-direction: row;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+.flex.wrap {
+  flex-wrap: wrap;
+}
+
+.flex.nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex.start {
+  justify-content: flex-start;
+}
+
+.flex.space-between {
+  justify-content: space-between;
+}
+
+.flex.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex.end {
+  justify-content: flex-end;
+}
+
+/* TEXT */
+
+.text {
+  font-family: Montserrat, sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h1.hero {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.hero-description {
+  font-size: 20px;
+}
+
+.banner-line-text {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.symbol {
+  margin-right: 13px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #3f0;
+  box-shadow: 0 0 5px 1px #0080004d;
+  border: 1px solid #123902;
+  animation: pulsate 2s infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    background-color: #3f0;
+    box-shadow: 0 0 5px 1px #0080004d;
+  }
+  50% {
+    background-color: darkgreen;
+    box-shadow: 0 0 10px 2px #00800080;
+  }
+  100% {
+    background-color: #3f0;
+    box-shadow: 0 0 5px 1px #0080004d;
+  }
+}
+
+.ticket-price {
+  font-size: 40px;
+}
+
+.landing-version {
+  font-size: 8px;
+  margin-top: 10px;
+  opacity: 50%;
+}
+
+/* BOXES */
+
+.header {
+  align-items: baseline;
+}
+
+.menu {
+  gap: 40px;
+}
+
+.menu.link {
+  text-decoration: none;
+  opacity: 70%;
+}
+
+.menu.link:hover {
+  opacity: 100%;
+}
+
+.hero-block {
+  padding-top: 250px;
+  padding-bottom: 270px;
+}
+
+.hero-text {
+  width: 800px;
+}
+
+.level-2-block {
+  border: 1px solid #ffffff20;
+  border-radius: 10px;
+  padding: 4% 8% 0% 8%;
+  width: 50%;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+
+.level-2-block.left {
+  margin-right: 1%;
+}
+
+.level-2-block.right {
+  margin-left: 1%;
+  text-align: right;
+}
+
+.level-2-block:hover {
+  opacity: 100%;
+  cursor: pointer;
+  border: 1px solid #ffffff30;
+}
+
+.more-pros {
+  flex: 1;
+  margin-right: 3%;
+  padding: 2% 1% 2% 1%;
+  border: 1px solid #ffffff20;
+  border-radius: 10px;
+  align-items: center;
+  font-weight: 500;
+  opacity: 70%;
+  margin-bottom: 2%;
+}
+
+.more-pros:last-child {
+  margin-right: 0;
+}
+
+.more-pros:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+
+.social-banner {
+  align-items: center;
+  padding: 4%;
+  background-color: #1b1b1b;
+  border-radius: 10px;
+  margin-bottom: 3%;
+}
+
+.social-banner:has(img.social-icon.twitter:hover) {
+  background-color: #1da1f2;
+}
+
+.social-banner:has(img.social-icon.discord:hover) {
+  background-color: #5865f2;
+}
+
+.social-banner:has(img.social-icon.telegram:hover) {
+  background-color: #229ed9;
+}
+
+.social-banner:has(img.social-icon.youtube:hover) {
+  background-color: #ef0800;
+}
+
+.ready-to-play-banner {
+  align-items: center;
+  padding: 4%;
+  background-color: #1b1b1b;
+  border-radius: 10px;
+  margin-bottom: 4%;
+}
+
+.marketplaces-block {
+  margin-bottom: 4%;
+}
+
+.marketplace-lots-block {
+  max-width: 70%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.lot-block {
+  width: 20%;
+  margin-right: 10%;
+}
+
+.lot-block:last-child {
+  margin-right: 0;
+}
+
+.lot-block:hover {
+  cursor: pointer;
+}
+
+.circle-under-lot {
+  margin-top: -25px;
+  width: 120%;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #ffffff20;
+  margin-bottom: 13px;
+}
+
+.native-cur-price {
+  font-size: 13px;
+  opacity: 40%;
+}
+
+.native-cur-price.ticket-block {
+  margin-bottom: 10%;
+}
+
+.tickets-block {
+  width: 60%;
+  padding: 3%;
+  border: 1px solid #ffffff20;
+  border-radius: 10px;
+  margin-bottom: 6%;
+}
+
+.ticket-image-block {
+  width: 60%;
+  align-items: center;
+  padding: 13%;
+  background-color: #1b1b1b;
+  border-radius: 10px;
+  margin-right: 2%;
+}
+
+.ticket-buy-block {
+  width: 40%;
+  margin-left: 2%;
+}
+
+.marketplaces-mini-buttons {
+  margin-bottom: 20px;
+}
+
+.marketplaces-mini-button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-right: 10px;
+  opacity: 70%;
+}
+
+.marketplaces-mini-button:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+
+.marketplaces-mini-button.ethereum:hover {
+  background-color: #2b2b2b;
+  border: 0;
+}
+
+.marketplaces-mini-button.polygon:hover {
+  background-color: #721fdf;
+  border: 0;
+}
+
+.marketplaces-mini-button.binance:hover {
+  background-color: #f0b90b;
+  border: 0;
+}
+
+.marketplaces-mini-button.fantom:hover {
+  background-color: #1f42df;
+  border: 0;
+}
+
+.quotes-blocks {
+  align-items: flex-start;
+  margin-bottom: 5%;
+}
+
+.creator-quote-block {
+  flex: 1;
+  margin-right: 3%;
+  padding: 2%;
+  border: 1px solid #ffffff20;
+  border-radius: 10px;
+  opacity: 70%;
+  margin-bottom: 2%;
+}
+
+.creator-quote-block:last-child {
+  margin-right: 0;
+}
+
+.creator-quote-block:hover {
+  opacity: 100%;
+  background-color: #1da1f2;
+  cursor: pointer;
+}
+
+.creator-name {
+  margin-top: 15px;
+}
+
+.footer-line {
+  height: 1px;
+  background-color: #ffffff20;
+}
+
+.footer-blocks {
+  align-items: flex-start;
+  margin-bottom: 5%;
+}
+
+.footer-block {
+  flex: 1;
+  margin-right: 3%;
+}
+
+.footer-block:last-child {
+  margin-right: 0;
+}
+
+.footer-block.brand {
+  font-size: 11px;
+  padding-right: 7%;
+}
+
+.footer-block.links a {
+  opacity: 70%;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.footer-block b {
+  margin-bottom: 25px;
+}
+
+.footer-block.links a:hover {
+  opacity: 100%;
+}
+
+/* BOXES * /
+  
+  /* IMAGES */
+
+.logo {
+  width: 190px;
+}
+
+.circle-figure {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 1px solid #ffffff20;
+  /* animation: rotate 15s linear infinite; */
+}
+
+/* @keyframes rotate {
+    0% {
+      transform: rotateY(0deg);
+    }
+    95% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  } */
+
+.hero.vending-machine {
+  width: 300px;
+  margin-right: 30px;
+}
+
+.hero.collections-mini-grid {
+  width: 300px;
+  margin-left: 30px;
+}
+
+.little-pros-icon {
+  width: 50%;
+  margin-bottom: 15%;
+}
+
+.social-icon {
+  width: 50px;
+  margin-left: 40px;
+}
+
+.social-icon:hover {
+  cursor: pointer;
+}
+
+.social-icon.mini {
+  width: 16px;
+  margin-right: 6px;
+  margin-left: 0;
+}
+
+.social-icon.footer {
+  width: 35px;
+  opacity: 70%;
+}
+
+.social-icon.footer:hover {
+  opacity: 100%;
+}
+
+.lot-chain-logo {
+  height: 16px;
+  margin-bottom: 10px;
+}
+
+.marketplaces-mini-logo {
+  height: 25px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.planet-icon {
+  width: 14px;
+  margin-right: 8px;
+}
+
+/* BUTTONS */
+
+button {
+  display: inline-block;
+  line-height: inherit;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 9px 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+button.play {
+  background-color: #1f65df;
+  font-weight: 400;
+}
+
+.ticket-buy-help {
+  background-color: #141414;
+  border: 1px solid #ffffff20;
+  font-weight: 400;
+  opacity: 70%;
+}
+
+.ticket-buy-help:hover {
+  opacity: 100%;
+  background-color: #f5ca01;
+  color: #333;
+}
+
+.ticket-buy-help.how {
+  margin-bottom: 10px;
+}
+
+button.language {
+  align-items: center;
+  border: 1px solid #ffffff20;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 20px;
+  opacity: 70%;
+}
+
+button.language:hover {
+  opacity: 100%;
+}
+
+/* BUTTONS */
