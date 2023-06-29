@@ -454,6 +454,11 @@ h2 {
   opacity: 100%;
 }
 
+.footer-block.social a {
+  width: 35px;
+  margin-left: 30px;
+}
+
 /* BOXES * /
   
 /* IMAGES */
@@ -514,8 +519,8 @@ h2 {
 }
 
 .social-icon.footer {
-  width: 35px;
   opacity: 70%;
+  margin: 0;
 }
 
 .social-icon.footer:hover {
