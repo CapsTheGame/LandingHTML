@@ -11,12 +11,15 @@
 
 body {
   max-width: 1600px;
+  margin: auto;
+  background-color: #141414;
+}
+
+.content {
+  padding-top: 2.5em;
+  padding-bottom: 1%;
   padding-right: 5%;
   padding-left: 5%;
-  margin: auto;
-  padding-top: 3%;
-  padding-bottom: 1%;
-  background-color: #141414;
 }
 
 a {
@@ -199,6 +202,19 @@ h2 {
   opacity: 100%;
 }
 
+.footer-menu {
+  gap: 40px;
+}
+
+.footer-menu.link {
+  text-decoration: none;
+  opacity: 70%;
+}
+
+.footer-menu.link:hover {
+  opacity: 100%;
+}
+
 .hero-block {
   padding-top: 250px;
   padding-bottom: 270px;
@@ -208,41 +224,47 @@ h2 {
   width: 800px;
 }
 
-.level-2-block {
+.two-pros-block {
+  flex: 1;
   border: 1px solid #ffffff20;
   border-radius: 10px;
   padding: 4% 8% 0% 8%;
-  width: 50%;
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 2%;
 }
 
-.level-2-block.left {
+.two-pros-block.left {
   margin-right: 1%;
 }
 
-.level-2-block.right {
+.two-pros-block.right {
   margin-left: 1%;
   text-align: right;
 }
 
-.level-2-block:hover {
+.two-pros-block:hover {
   opacity: 100%;
   cursor: pointer;
   border: 1px solid #ffffff30;
 }
 
+.two-pros-text {
+  max-width: min-content;
+  white-space: pre-line;
+}
+
 .more-pros {
   flex: 1;
   margin-right: 3%;
-  padding: 2% 1% 2% 1%;
+  padding: 2%;
   border: 1px solid #ffffff20;
   border-radius: 10px;
   align-items: center;
   font-weight: 500;
   opacity: 70%;
   margin-bottom: 2%;
+  text-align: center;
 }
 
 .more-pros:last-child {
@@ -454,9 +476,14 @@ h2 {
   opacity: 100%;
 }
 
+.footer-block.social a {
+  width: 35px;
+  margin-left: 30px;
+}
+
 /* BOXES * /
   
-  /* IMAGES */
+/* IMAGES */
 
 .logo {
   width: 190px;
@@ -494,8 +521,8 @@ h2 {
 }
 
 .little-pros-icon {
-  width: 50%;
-  margin-bottom: 15%;
+  width: 75px;
+  margin-bottom: 20%;
 }
 
 .social-icon {
@@ -514,8 +541,8 @@ h2 {
 }
 
 .social-icon.footer {
-  width: 35px;
   opacity: 70%;
+  margin: 0;
 }
 
 .social-icon.footer:hover {
@@ -566,6 +593,7 @@ button.play {
   border: 1px solid #ffffff20;
   font-weight: 400;
   opacity: 70%;
+  width: 100%;
 }
 
 .ticket-buy-help:hover {
@@ -593,3 +621,96 @@ button.language:hover {
 }
 
 /* BUTTONS */
+
+/* TABLET SCREENS */
+
+/* @media (min-width: 768px) and (max-width: 1200px) {*/
+@media (max-width: 1200px) {
+  .menu {
+    display: none;
+  }
+
+  .two-pros-container {
+    flex-direction: column;
+  }
+
+  .two-pros-block.left {
+    margin-right: 0%;
+    padding-top: 40px;
+    justify-content: center;
+  }
+
+  .two-pros-block.right {
+    margin-left: 0%;
+    padding-top: 40px;
+    justify-content: center;
+  }
+
+  .little-pros-icon {
+    width: 60px;
+  }
+
+  .banner-line-text {
+    font-size: 18px;
+  }
+
+  .social-icon {
+    width: 32px;
+    margin-left: 24px;
+  }
+
+  .ticket-image-block {
+    padding: 8%;
+  }
+
+  .marketplaces-mini-buttons {
+    margin-bottom: 15px;
+  }
+
+  .marketplaces-mini-button {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+  }
+
+  .marketplaces-mini-logo {
+    height: 16px;
+  }
+
+  .ticket-price {
+    font-size: 30px;
+  }
+
+  .creator-quote-block {
+    font-size: 11px;
+  }
+
+  button.language {
+    padding: 7px;
+    font-size: 12px;
+    align-items: center;
+  }
+
+  .planet-icon {
+    width: 12px;
+    margin-right: 4px;
+  }
+
+  .footer-block.empty {
+    display: none;
+  }
+
+  .footer-menu.link {
+    font-size: 12px;
+  }
+}
+
+/* TABLET SCREENS */
+
+/* MOBILE SCREENS */
+
+@media (max-width: 767px) {
+  /* CSS styles for mobile screens */
+}
+
+/* MOBILE SCREENS */
