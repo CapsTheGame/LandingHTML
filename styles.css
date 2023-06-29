@@ -456,7 +456,7 @@ h2 {
 
 /* BOXES * /
   
-  /* IMAGES */
+/* IMAGES */
 
 .logo {
   width: 190px;
@@ -566,6 +566,7 @@ button.play {
   border: 1px solid #ffffff20;
   font-weight: 400;
   opacity: 70%;
+  width: 100%;
 }
 
 .ticket-buy-help:hover {

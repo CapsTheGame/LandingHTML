@@ -1,9 +1,32 @@
+<!-- TODO: Fix footer social links -->
+<!-- TODO: Add choose language page (EN only now) -->
+<!-- TODO: Point link to the marketplace collections (at least) -->
+<!-- TODO: Complete the 6 content pages -->
+<!-- TODO: Adapt CSS to mobile and tablet screens -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TITLE</title>
+    <title>CAPS ● Crypto NFT Collectible Game</title>
+    <meta
+      name="description"
+      content="Play to earn new digital NFT collectibles. CAPS is a browser and mobile game with unique NFT concept. DApp supports Ethereum, Polygon, Binance, Fantom chains."
+    />
+    <!--
+    <link
+      rel="alternate"
+      hreflang="de"
+      href="https://ahrefs.com/blog/de/kostenlose-keyword-recherche-tools/"
+    />
+    <link
+      rel="alternate"
+      hreflang="zh"
+      href="https://ahrefs.com/blog/zh/free-keyword-research-tools/"
+    />
+    <link rel="alternate" hreflang="x-default" href="index.html" />
+   -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -13,11 +36,12 @@
         ><img class="logo" src="img/caps-logo-white.svg" alt="CAPS logo"
       /></a>
       <div class="menu flex row center">
-        <a href="/vending-machines" class="menu link">Vending machines</a>
-        <a href="/vending-machines" class="menu link">NFTs</a>
-        <a href="/vending-machines" class="menu link">Token</a>
-        <a href="/vending-machines" class="menu link">Game</a>
-        <a href="/vending-machines" class="menu link">Free tickets</a>
+        <a href="vending-machines.html" class="menu link">Vending machines</a>
+        <a href="nfts.html" class="menu link">NFTs</a>
+        <a href="token.html" class="menu link">Token</a>
+        <a href="game.html" class="menu link">Game</a>
+        <a href="markets.html" class="menu link">Markets</a>
+        <a href="free-tickets.html" class="menu link">Free tickets</a>
         <a
           href="https://docs.mycaps.app/getting-started"
           class="menu link"
@@ -38,11 +62,11 @@
       </div>
     </div>
     <div class="flex space-between">
-      <a href="/vending-machines" class="level-2-block left flex row">
+      <a href="vending-machines.html" class="level-2-block left flex row">
         <img class="hero vending-machine" src="img/vm-cutted.png" alt="" />
         <div class="flex column">Use vending machines</div>
       </a>
-      <a href="/nfts" class="level-2-block right flex row">
+      <a href="nfts.html" class="level-2-block right flex row">
         <div class="flex column">Complete your collections</div>
         <img
           class="hero collections-mini-grid"
@@ -53,39 +77,55 @@
     </div>
     <!-- MORE PROS -->
     <div class="more-pros-blocks flex space-between">
-      <div class="more-pros flex column">
+      <a href="markets.html" class="more-pros flex column">
         <img class="little-pros-icon" src="img/chart-icon.svg" alt="" />
         Buy or sell them
-      </div>
-      <div class="more-pros flex column">
+      </a>
+      <a href="game.html" class="more-pros flex column">
         <img class="little-pros-icon" src="img/stack-icon.svg" alt="" />
         Play with them
-      </div>
-      <div class="more-pros flex column">
+      </a>
+      <a href="token.html" class="more-pros flex column">
         <img class="little-pros-icon" src="img/burn-icon.svg" alt="" />
         Burn them
-      </div>
-      <div class="more-pros flex column">
+      </a>
+      <a href="token.html" class="more-pros flex column">
         <img class="little-pros-icon" src="img/caps-token.svg" alt="" />
         Hold the token
-      </div>
-      <div class="more-pros flex column">
+      </a>
+      <a href="free-tickets.html" class="more-pros flex column">
         <img class="little-pros-icon" src="img/ticket-icon.svg" alt="" />
         Get them for free
-      </div>
-      <div class="more-pros flex column">
+      </a>
+      <a
+        href="https://docs.mycaps.app/getting-started"
+        target="_blank"
+        class="more-pros flex column"
+      >
         <img class="little-pros-icon" src="img/docs-icon.svg" alt="" />
         Explore the docs
-      </div>
+      </a>
     </div>
     <!-- SUBSCRIBE SOCIALS -->
     <div class="social-banner flex space-between">
       <div class="banner-line-text">Subscribe to our social media channels</div>
       <div>
-        <img class="social-icon twitter" src="img/twitter-white.svg" alt="" />
-        <img class="social-icon discord" src="img/discord-white.svg" alt="" />
-        <img class="social-icon telegram" src="img/telegram-white.svg" alt="" />
-        <img class="social-icon youtube" src="img/youtube-white.svg" alt="" />
+        <a href="https://twitter.com/CollectTheCaps" target="_blank">
+          <img class="social-icon twitter" src="img/twitter-white.svg" alt="" />
+        </a>
+        <a href="https://discord.gg/WAY5ZDhBMW" target="_blank">
+          <img class="social-icon discord" src="img/discord-white.svg" alt="" />
+        </a>
+        <a href="https://telegram.me/CapsWorldChat" target="_blank">
+          <img
+            class="social-icon telegram"
+            src="img/telegram-white.svg"
+            alt=""
+          />
+        </a>
+        <a href="https://youtube.com/@collectthecaps" target="_blank">
+          <img class="social-icon youtube" src="img/youtube-white.svg" alt="" />
+        </a>
       </div>
     </div>
     <!-- LIVE MARKETPLACE LOTS -->
@@ -117,7 +157,7 @@
           <img src="img/320.png" alt="" />
           <div class="circle-under-lot"></div>
           <div class="lot-details flex column center">
-            <img class="lot-chain-logo" src="img/fantom-white.svg" alt="" />
+            <img class="lot-chain-logo" src="img/fantom-white.png" alt="" />
             3.11 USD
             <div class="native-cur-price">9.33 FTM</div>
           </div>
@@ -164,37 +204,57 @@
             <div class="ticket-price">3 USD</div>
             <div class="native-cur-price ticket-block">mint price</div>
             <div class="marketplaces-mini-buttons flex row">
-              <div class="marketplaces-mini-button ethereum flex center">
+              <a
+                class="marketplaces-mini-button ethereum flex center"
+                target="_blank"
+                href="https://opensea.io/assets/ethereum/0xb03ea7e56a60679db61bc0775e42e344968e7cbb/1"
+              >
                 <img
                   class="marketplaces-mini-logo"
                   src="img/ethereum-white.svg"
                   alt=""
                 />
-              </div>
-              <div class="marketplaces-mini-button polygon flex center">
+              </a>
+              <a
+                class="marketplaces-mini-button polygon flex center"
+                target="_blank"
+                href="https://opensea.io/assets/matic/0xb2e7c4d821312fcb896eb0451f300364a9ca93f0/1"
+              >
                 <img
                   class="marketplaces-mini-logo"
                   src="img/polygon-white.svg"
                   alt=""
                 />
-              </div>
-              <div class="marketplaces-mini-button binance flex center">
+              </a>
+              <a
+                class="marketplaces-mini-button binance flex center"
+                target="_blank"
+                href="https://opensea.io/assets/bsc/0xce811d6be095f2aafd06d0813420d825c818db56/1"
+              >
                 <img
                   class="marketplaces-mini-logo"
                   src="img/binance-white.svg"
                   alt=""
                 />
-              </div>
-              <div class="marketplaces-mini-button fantom flex center">
+              </a>
+              <a
+                class="marketplaces-mini-button fantom flex center"
+                target="_blank"
+                href="https://paintswap.finance/marketplace/fantom/assets/0xc8314921661533241fd7448d805957ecda45efb4/1"
+              >
                 <img
                   class="marketplaces-mini-logo"
                   src="img/fantom-white.png"
                   alt=""
                 />
-              </div>
+              </a>
             </div>
-            <button class="ticket-buy-help how">How to buy?</button>
-            <button class="ticket-buy-help free">Get for free</button>
+            <a href="vending-machines.html"
+              ><button class="ticket-buy-help how">How to buy?</button></a
+            >
+            <a href="free-tickets.html">
+              <button class="ticket-buy-help free">Get for free</button>
+            </a>
           </div>
         </div>
       </div>
@@ -202,53 +262,70 @@
     <!-- READY TO PLAY? -->
     <div class="ready-to-play-banner flex space-between">
       <div class="banner-line-text">Are you ready for the new era?</div>
-      <button class="play">Play</button>
+      <a href="https://mycaps.app" target="_blank"
+        ><button class="play">Play</button></a
+      >
     </div>
     <!-- CREATOR QUOTES -->
     <div class="quotes-blocks flex space-between">
-      <div class="creator-quote-block flex column">
-        &quot;Our motivation to create CAPS arose from the main problem in the
-        current NFT market, which is that many buyers have no practical use for
-        the images they purchase.&quot;
+      <a
+        target="_blank"
+        href="https://twitter.com/ethan_blockson/status/1674342249264553987?s=20"
+        class="creator-quote-block flex column"
+      >
+        Our motivation to create CAPS arose from the main problem in the current
+        NFT market, which is that many buyers have no practical use for the
+        images they purchase.
         <div class="creator-name flex row">
           <img class="social-icon mini" src="img/twitter-white.svg" alt="" />
           @ethan_blockson
         </div>
-      </div>
-      <div class="creator-quote-block flex column">
-        &quot;In the CAPS game, however, you can actually play with your
-        collectibles, and as you do so, they gradually lose quality, forcing you
-        to develop your own unique strategies within the game&apos;s
-        economy.&quot;
+      </a>
+      <a
+        target="_blank"
+        href="https://twitter.com/ethan_blockson/status/1674342306499928065?s=20"
+        class="creator-quote-block flex column"
+      >
+        In the CAPS game, however, you can actually play with your collectibles,
+        and as you do so, they gradually lose quality, forcing you to develop
+        your own unique strategies within the game&apos;s economy.
         <div class="creator-name flex row">
           <img class="social-icon mini" src="img/twitter-white.svg" alt="" />
           @ethan_blockson
         </div>
-      </div>
-      <div class="creator-quote-block flex column">
-        &quot;Starting from the 2nd collection, tickets can only be purchased
-        with the native currency, which makes the economy fully dependent on the
-        market. Users can play with caps and win or lose them.&quot;
+      </a>
+      <a
+        target="_blank"
+        href="https://twitter.com/ethan_blockson/status/1674342469645869060?s=20"
+        class="creator-quote-block flex column"
+      >
+        Starting from the 2nd collection, tickets can only be purchased with the
+        native currency, which makes the economy fully dependent on the market.
+        Users can play with caps and win or lose them.
         <div class="creator-name flex row">
           <img class="social-icon mini" src="img/twitter-white.svg" alt="" />
-          @AkiraKitamuraa
+          @ethan_blockson
         </div>
-      </div>
-      <div class="creator-quote-block flex column">
-        &quot;Scratched caps are more valuable than fresh ones during the burn
-        process for game currency. However, packed caps can also hold special
-        value for collectors. Thus, there is a supply/demand curve.&quot;
+      </a>
+      <a
+        target="_blank"
+        href="https://twitter.com/ethan_blockson/status/1674342573433864193?s=20"
+        class="creator-quote-block flex column"
+      >
+        Scratched caps are more valuable than fresh ones during the burn process
+        for game currency. However, packed caps can also hold special value for
+        collectors. Thus, there is a supply/demand curve.
         <div class="creator-name flex row">
           <img class="social-icon mini" src="img/twitter-white.svg" alt="" />
-          @AkiraKitamuraa
+          @ethan_blockson
         </div>
-      </div>
+      </a>
     </div>
     <!-- FOOTER -->
     <div class="footer-blocks flex space-between">
       <div class="footer-block brand">
         <img class="footer-logo" src="img/caps-logo-white.svg" alt="" />
-        <div>Decentralized NFT collectible game</div>
+        <div>Crypto NFT collectible game</div>
         <div>Released June 2023</div>
         <div>Use social media to reach us</div>
         <div class="landing-version">v1.0.0</div>
@@ -259,16 +336,27 @@
       </div>
       <div class="footer-block links flex column">
         <b>Explore</b>
-        <a href="#">Vending machines</a>
-        <a href="#">NFTs</a>
-        <a href="#">Token</a>
-        <a href="#">Game</a>
-        <a href="#">Free tickets</a>
+        <a href="vending-machines.html" class="menu link">Vending machines</a>
+        <a href="nfts.html" class="menu link">NFTs</a>
+        <a href="token.html" class="menu link">Token</a>
+        <a href="game.html" class="menu link">Game</a>
+        <a href="markets.html" class="menu link">Markets</a>
+        <a href="free-tickets.html" class="menu link">Free tickets</a>
       </div>
       <div class="footer-block links flex column">
         <b>Read</b>
-        <a href="#">Docs</a>
-        <a href="#">Contracts</a>
+        <a
+          href="https://docs.mycaps.app/getting-started"
+          class="menu link"
+          target="_blank"
+          >Docs</a
+        >
+        <a
+          href="https://github.com/CapsTheGame/Contracts"
+          class="menu link"
+          target="_blank"
+          >Contracts</a
+        >
         <a href="#">Blog</a>
       </div>
       <div class="footer-block empty"></div>
