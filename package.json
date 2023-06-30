@@ -1,0 +1,20 @@
+{
+  "name": "landinghtml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "aws s3 sync out/ s3://mycapsorg --delete && aws cloudfront create-invalidation --distribution-id E1LL27SGT4605D --paths \"/*\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CapsTheGame/LandingHTML.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CapsTheGame/LandingHTML/issues"
+  },
+  "homepage": "https://github.com/CapsTheGame/LandingHTML#readme"
+}
