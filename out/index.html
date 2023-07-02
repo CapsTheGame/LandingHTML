@@ -61,8 +61,36 @@
             src="img/caps-logo-white.svg"
             alt="CAPS logo"
         /></a>
-        <div class="menu-mobile-button">
+        <label class="menu-mobile-button" for="modal-1">
           <img src="img/menu-mobile-icon-white.svg" class="menu-icon" alt="" />
+        </label>
+      </div>
+      <!-- MENU MODAL (MOBILE) -->
+      <input class="modal-state" id="modal-1" type="checkbox" />
+      <div class="modal">
+        <label class="modal__bg" for="modal-1"></label>
+        <div class="modal__inner">
+          <label class="modal__close" for="modal-1">
+            <img class="modal-close-icon" src="img/close-white.svg" alt="" />
+          </label>
+          <div class="mobile-menu-links-block flex column">
+            <a href="vending-machines.html" class="mobile-menu-link-button"
+              >Vending machines</a
+            >
+            <a href="nfts.html" class="mobile-menu-link-button">NFTs</a>
+            <a href="token.html" class="mobile-menu-link-button">Token</a>
+            <a href="game.html" class="mobile-menu-link-button">Game</a>
+            <a href="markets.html" class="mobile-menu-link-button">Markets</a>
+            <a href="free-tickets.html" class="mobile-menu-link-button"
+              >Free tickets</a
+            >
+            <a
+              href="https://mycaps.app"
+              target="_blank"
+              class="mobile-menu-link-button blue"
+              >Play</a
+            >
+          </div>
         </div>
       </div>
       <!-- HERO -->
@@ -70,7 +98,10 @@
         <div class="hero-text flex column center">
           <div class="circle-figure"></div>
           <h1 class="hero">Full-cycle NFT game</h1>
-          <div class="hero-description">Collect. Trade. Play. Burn. Gain.</div>
+          <div class="hero-description">Collect. Trade. Win. Burn. Hold.</div>
+          <a href="https://mycaps.app" target="_blank"
+            ><button class="play mobile">Play</button></a
+          >
         </div>
       </div>
       <!-- 2 PROS -->
@@ -125,7 +156,7 @@
         </a>
       </div>
       <!-- SUBSCRIBE SOCIALS -->
-      <div class="social-banner flex space-between">
+      <div class="social-banner flex">
         <div class="banner-line-text">
           Subscribe to our social media channels
         </div>
