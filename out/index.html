@@ -5,7 +5,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CAPS ● Crypto NFT Collectible Game</title>
+    <title>CAPS • Crypto NFT Collectible Game</title>
     <meta
       name="description"
       content="Play to earn new digital NFT collectibles. CAPS is a browser and mobile game with unique NFT concept. DApp supports Ethereum, Polygon, Binance, Fantom chains."
@@ -32,6 +32,57 @@
     <meta name="msapplication-TileColor" content="#000000" />
     <meta name="theme-color" content="#000000" />
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-QDXR5JS6G6"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-QDXR5JS6G6");
+  </script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] =
+        m[i] ||
+        function () {
+          (m[i].a = m[i].a || []).push(arguments);
+        };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) {
+        if (document.scripts[j].src === r) {
+          return;
+        }
+      }
+      (k = e.createElement(t)),
+        (a = e.getElementsByTagName(t)[0]),
+        (k.async = 1),
+        (k.src = r),
+        a.parentNode.insertBefore(k, a);
+    })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(94229006, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true,
+    });
+  </script>
+  <noscript
+    ><div>
+      <img
+        src="https://mc.yandex.ru/watch/94229006"
+        style="position: absolute; left: -9999px"
+        alt=""
+      /></div
+  ></noscript>
+  <!-- /Yandex.Metrika counter -->
   <body>
     <div class="content">
       <!-- HEADER -->
@@ -44,7 +95,7 @@
           <a href="nfts.html" class="menu link">NFTs</a>
           <a href="token.html" class="menu link">Token</a>
           <a href="game.html" class="menu link">Game</a>
-          <a href="markets.html" class="menu link">Markets</a>
+          <a href="markets-polygon.html" class="menu link">Markets</a>
           <a href="free-tickets.html" class="menu link">Free tickets</a>
           <a
             href="https://docs.mycaps.app/getting-started"
@@ -84,7 +135,9 @@
             <a href="nfts.html" class="mobile-menu-link-button">NFTs</a>
             <a href="token.html" class="mobile-menu-link-button">Token</a>
             <a href="game.html" class="mobile-menu-link-button">Game</a>
-            <a href="markets.html" class="mobile-menu-link-button">Markets</a>
+            <a href="markets-polygon.html" class="mobile-menu-link-button"
+              >Markets</a
+            >
             <a href="free-tickets.html" class="mobile-menu-link-button"
               >Free tickets</a
             >
@@ -125,7 +178,7 @@
       </div>
       <!-- MORE PROS -->
       <div class="more-pros-blocks flex space-between">
-        <a href="markets.html" class="more-pros flex column">
+        <a href="markets-polygon.html" class="more-pros flex column">
           <img class="little-pros-icon" src="img/chart-icon.svg" alt="" />
           Buy or sell them
         </a>
@@ -355,6 +408,8 @@
           ><button class="play">Play</button></a
         >
       </div>
+      <!-- TWEETS -->
+      <h2 class="mini">Tweets</h2>
       <!-- CREATOR QUOTES -->
       <div class="quotes-blocks flex space-between">
         <a
@@ -386,35 +441,37 @@
         </a>
         <a
           target="_blank"
-          href="https://twitter.com/ethan_blockson/status/1674342469645869060?s=20"
+          href="https://twitter.com/AkiraKitamuraa/status/1676500012287533056?s=20"
           class="creator-quote-block flex column"
         >
-          Starting from the 2nd collection, tickets can only be purchased with
-          the native currency, which makes the economy fully dependent on the
-          market. Users can play with caps and win or lose them.
+          CAPS reflect value, providing you with multiple ways to utilize your
+          capital beyond simply purchasing air.
           <div class="creator-name flex row">
             <img class="social-icon mini" src="img/twitter-white.svg" alt="" />
-            @ethan_blockson
+            @AkiraKitamuraa
           </div>
         </a>
         <a
           target="_blank"
-          href="https://twitter.com/ethan_blockson/status/1674342573433864193?s=20"
+          href="https://twitter.com/AkiraKitamuraa/status/1676526752015822849?s=20"
           class="creator-quote-block flex column"
         >
-          Scratched caps are more valuable than fresh ones during the burn
-          process for game currency. However, packed caps can also hold special
-          value for collectors. Thus, there is a supply/demand curve.
+          When you buy a ticket, board the train,<br />
+          Journey through the land, no need to explain.<br />
+          With each clickety-clack, a rhythmic sound,<br />
+          Open your caps, a gain to be found.
           <div class="creator-name flex row">
             <img class="social-icon mini" src="img/twitter-white.svg" alt="" />
-            @ethan_blockson
+            @AkiraKitamuraa
           </div>
         </a>
       </div>
       <!-- FOOTER -->
       <div class="footer-blocks flex space-between">
         <div class="footer-block brand">
-          <img class="footer-logo" src="img/caps-logo-white.svg" alt="" />
+          <a href="index.html">
+            <img class="footer-logo" src="img/caps-logo-white.svg" alt=""
+          /></a>
           <div>Crypto NFT collectible game</div>
           <div>Released June 2023</div>
           <div>Use social media to reach us</div>
@@ -432,7 +489,7 @@
           <a href="nfts.html" class="footer-menu link">NFTs</a>
           <a href="token.html" class="footer-menu link">Token</a>
           <a href="game.html" class="footer-menu link">Game</a>
-          <a href="markets.html" class="footer-menu link">Markets</a>
+          <a href="markets-polygon.html" class="footer-menu link">Markets</a>
           <a href="free-tickets.html" class="footer-menu link">Free tickets</a>
         </div>
         <div class="footer-block links flex column">
