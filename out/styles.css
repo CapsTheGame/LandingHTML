@@ -1168,6 +1168,10 @@ button.language:hover {
     width: 28%;
   }
 
+  .nfts-hero.solo-cap {
+    width: 60%;
+  }
+
   .more-pros-blocks {
     display: flex;
     flex-wrap: wrap;
